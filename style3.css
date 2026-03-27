@@ -1,0 +1,284 @@
+:root {
+    --bg: #6b917b;
+    --main-color: #29422c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    padding-top: 80px;
+    background-color: var(--bg);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+}
+
+.navbar a:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.home-container {
+    background: url(./img/montanha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 60rem;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+}
+
+.container p {
+    font-size: 1.0rem;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container a {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.conteudo {
+    background: #fff;
+    padding: 80px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.trilhas .row {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    padding: 40px;
+
+}
+
+.trilha-image img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    border-radius: 10px 0 0 10px;
+}
+
+.trilha-item {
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+    right: 3rem;
+}
+
+.trilhas h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    padding: 1rem 0;
+}
+
+.trilha-item h3 {
+    font-size: 1.5rem;
+}
+
+.trilha-item p {
+    font-size: 1rem;
+}
+
+.trilha-item .btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sobre {
+    background: #fff;
+    padding: 40px 80px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    top: 7rem;
+}
+
+.sobre h2 {
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre p {
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: -1rem;
+}
+
+.sobre .icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.sobre .icon .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre .btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    left: 15rem;
+    top: 15rem;
+}
+
+.final {
+    background: var(--main-color);
+    padding: 100px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    top: 25rem;
+}
+
+.coluna-1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding-left: 10%;     
+    gap: 10px;  
+}             
+.coluna-1 a {
+    text-decoration: none;   
+    color: #000;            
+    font-size: 17px;
+}
+
+.coluna-1 p{
+    padding: 1rem 0;
+    font-size: 17px;
+}
+
+.coluna-1 img {
+    margin-bottom: 70px;   
+    width: 70px;             
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20%;
+    gap: 20px;
+}
+
+.redes a{
+    text-decoration: none;   
+    color: #000;             
+    font-size: 17px;
+    position: relative;
+    top: -10rem;
+}
